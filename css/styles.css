@@ -34,35 +34,20 @@ body {
   padding: 0 0 !important;
 }
 
+section {
+}
 .list-items:hover {
   background: #be4848;
 }
 .section-text p {
   margin-top: +55px;
 }
-
-h1 {
-  display: block;
-  width: 100%;
-
-  text-align: center;
-}
-.section-text {
+.border-section {
+  width: 80%;
+  margin: auto;
   position: relative;
-  display: block;
-}
-h2 {
-  position: absolute;
-  right: 15px;
-  top: 0;
-  border: black 2px solid;
-}
-section {
-  margin-right: 46px;
-  margin-left: 23px;
-  margin-bottom: 5%;
-}
-section {
+  height: 405px !important ;
+  border: 2px silver solid;
   background: rgba(212, 228, 239, 1);
   background: -moz-linear-gradient(
     left,
@@ -98,6 +83,53 @@ section {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc', GradientType=1 );
 }
 
+.section-text {
+  position: relative;
+  display: block;
+}
+h2 {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  border: black 2px solid;
+}
+section {
+  margin-bottom: 5%;
+}
+section:hover {
+  -webkit-animation: rotate-scale-up 0.65s linear both;
+  animation: rotate-scale-up 0.65s linear both;
+}
+
+@-webkit-keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+
 /* END MENU CATEGORIES PAGE */
 
 /********** Large devices only **********/
@@ -127,8 +159,6 @@ section {
     margin: 0 30px;
   }
   section {
-    margin-right: 46px;
-    margin-left: 23px;
     margin-bottom: 5%;
   }
 }
@@ -136,8 +166,6 @@ section {
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
   section {
-    margin-right: 46px;
-    margin-left: 23px;
     margin-bottom: 5%;
   }
   .margintop-10px {
@@ -151,8 +179,6 @@ section {
   }
 
   section {
-    margin-right: 46px;
-    margin-left: 23px;
     margin-bottom: 5%;
   }
 }
