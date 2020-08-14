@@ -1,0 +1,167 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #be4848;
+  font-family: "Oxygen", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#span-box span:nth-child(1) {
+  background-color: #be4848;
+}
+#span-box span:nth-child(3) {
+  background-color: #be4848;
+}
+
+.logo-image {
+  background-image: url(../logo_transparent.png);
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  margin-top: -16px;
+}
+.navbar-inverse .navbar-nav > .active > a {
+  background-color: #be4848;
+}
+.navbar-margin {
+  margin-bottom: 21px;
+}
+.navbar-brand {
+  padding: 0 0 !important;
+}
+
+.list-items:hover {
+  background: #be4848;
+}
+.section-text p {
+  margin-top: +55px;
+}
+
+h1 {
+  display: block;
+  width: 100%;
+
+  text-align: center;
+}
+.section-text {
+  position: relative;
+  display: block;
+}
+h2 {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  border: black 2px solid;
+}
+section {
+  margin-right: 46px;
+  margin-left: 23px;
+  margin-bottom: 5%;
+}
+section {
+  background: rgba(212, 228, 239, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(212, 228, 239, 1) 0%,
+    rgba(134, 174, 204, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(212, 228, 239, 1)),
+    color-stop(100%, rgba(134, 174, 204, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(212, 228, 239, 1) 0%,
+    rgba(134, 174, 204, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(212, 228, 239, 1) 0%,
+    rgba(134, 174, 204, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(212, 228, 239, 1) 0%,
+    rgba(134, 174, 204, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(212, 228, 239, 1) 0%,
+    rgba(134, 174, 204, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc', GradientType=1 );
+}
+
+/* END MENU CATEGORIES PAGE */
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .margintop-10px {
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+    width: 80%;
+  }
+
+  .margintop-10px li {
+    margin: 0 30px;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* End Home Page */
+  .margintop-10px {
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+    width: 80%;
+  }
+  .margintop-10px li {
+    margin: 0 30px;
+  }
+  section {
+    margin-right: 46px;
+    margin-left: 23px;
+    margin-bottom: 5%;
+  }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  section {
+    margin-right: 46px;
+    margin-left: 23px;
+    margin-bottom: 5%;
+  }
+  .margintop-10px {
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+    width: 80%;
+  }
+  .margintop-10px li {
+    margin: 0 30px;
+  }
+
+  section {
+    margin-right: 46px;
+    margin-left: 23px;
+    margin-bottom: 5%;
+  }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  .nav > li {
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+}
